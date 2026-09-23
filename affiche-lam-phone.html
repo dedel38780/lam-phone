@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lam Phone - Affiche QR</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f8fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .poster {
+    width: 148mm;
+    min-height: 210mm;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 12px 40px rgba(14, 42, 71, 0.18);
+    overflow: hidden;
+    text-align: center;
+    border: 3px solid #0ea5e9;
+  }
+  .head {
+    background: linear-gradient(135deg, #0ea5e9, #0369a1);
+    color: #fff;
+    padding: 14px 16px;
+  }
+  .head h1 { font-size: 30px; letter-spacing: 2px; font-weight: 800; }
+  .head p { font-size: 12px; opacity: .92; margin-top: 2px; }
+  .mid { padding: 14px 16px; }
+  .mid .slogan { font-size: 13px; font-weight: 600; color: #0c4a6e; margin-bottom: 10px; }
+  #qrcode { display: inline-block; padding: 10px; background: #fff; border: 1px solid #dbeafe; border-radius: 10px; }
+  #qrcode img, #qrcode canvas { display: block; }
+  .infos { margin: 12px 0; }
+  .infos .tel { font-size: 24px; font-weight: 800; color: #0369a1; }
+  .infos .ligne { font-size: 13px; color: #334155; margin-top: 4px; }
+  .infos .ligne b { color: #0c4a6e; }
+  .badges { display: flex; justify-content: center; gap: 8px; margin-top: 10px; }
+  .badge {
+    font-size: 10px; font-weight: 700; color: #fff;
+    padding: 5px 10px; border-radius: 20px;
+  }
+  .badge.wa { background: #25d366; }
+  .badge.h { background: #0369a1; }
+  .badge.f { background: #0ea5e9; }
+  .foot { border-top: 1px dashed #bae6fd; padding: 10px 14px; font-size: 10px; color: #64748b; }
+  .foot .url { font-weight: 700; color: #0369a1; }
+  @media print {
+    body { padding: 0; background: #fff; }
+    .poster { box-shadow: none; border: 2px solid #0ea5e9; }
+  }
+</style>
+</head>
+<body>
+  <div class="poster">
+    <div class="head">
+      <h1>LAM PHONE</h1>
+      <p>Réparation de téléphones &amp; d'ordinateurs</p>
+    </div>
+    <div class="mid">
+      <div class="slogan">Scannez le code pour accéder au site</div>
+      <div id="qrcode"></div>
+      <div class="infos">
+        <div class="tel">07 63 51 70 25</div>
+        <div class="ligne"><b>Pont-Évêque</b> · 38780 · 24h/24 · 7j/7</div>
+      </div>
+      <div class="badges">
+        <span class="badge wa">WhatsApp</span>
+        <span class="badge h">Devis gratuit</span>
+        <span class="badge f">Garantie</span>
+      </div>
+    </div>
+    <div class="foot">
+      <span class="url">dedel38780.github.io/lam-phone</span><br>
+      Lam Phone – Écrans · Batteries · Caméras · Dégâts d'eau · PC
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    new QRCode(document.getElementById("qrcode"), {
+      text: "https://dedel38780.github.io/lam-phone/",
+      width: 320,
+      height: 320,
+      colorDark: "#0c4a6e",
+      colorLight: "#ffffff"
+    });
+  </script>
+</body>
+</html>
