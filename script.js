@@ -1,15 +1,24 @@
-document.getElementById("menuBtn").addEventListener("click", function () {
-  document.getElementById("navLinks").classList.toggle("open");
-});
+var menuBtn = document.getElementById("menuBtn");
+var navLinks = document.getElementById("navLinks");
+if (menuBtn && navLinks) {
+  menuBtn.addEventListener("click", function () {
+    navLinks.classList.toggle("open");
+  });
+}
 
-document.getElementById("year").textContent = new Date().getFullYear();
+var yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  var msg = document.getElementById("formMsg");
-  msg.textContent = "Merci " + document.getElementById("nom").value + " ! Votre demande a bien été reçue, nous vous rappelons au plus vite.";
-  this.reset();
-});
+var form = document.getElementById("contactForm");
+var formMsg = document.getElementById("formMsg");
+if (form && formMsg) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var nom = document.getElementById("nom");
+    formMsg.textContent = "Merci " + (nom ? nom.value : "") + " ! Votre demande a bien été reçue, nous vous rappelons au plus vite.";
+    form.reset();
+  });
+}
 
 var isTouch = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent) || (window.matchMedia && window.matchMedia("(pointer: coarse)").matches);
 var tiltOn = false;
