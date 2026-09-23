@@ -23,10 +23,15 @@ Site vitrine d'un réparateur de téléphones et ordinateurs à Pont-Évêque (3
 - Barre d'action fixe sur mobile : `.cta-bar` (2 boutons : appeler / WhatsApp).
 - Formulaire Devis → ouvre `wa.me/33763517025` avec la demande pré-remplie (pas de serveur, rien n'est stocké).
 
-## Design (au goût du client : sobre, pro)
-- Accent `#0ea5e9`, foncé `#0369a1`, fond `#f4f8fc`, encre `#0c4a6e`, texte `#334155`.
+## Design (goût client : sobre/pro + détails premium — « peau v2 » validée le 23/09/2026)
+- Accent `#0ea5e9`, foncé `#0284c7`, navy profond `#0b1f3a`, fond `#f6f9fc`, texte `#1f2937`.
 - Polices : Poppins (titres/logo), Inter (corps), DM Serif Display (slogan contact).
-- Pas d'animations tape-à-l'œil, pas d'émojis. Le client a déjà rejeté une refonte avec animations/compteurs/marquee.
+- Pas d'émojis. Animations subtiles uniquement : reveal au scroll `.rev` (sûr : contenu jamais invisible), reflet des boutons, dégradé du mot hero, blobs du hero.
+- Détails v2 : numéro dans le header (`.header-tel`, desktop), mini-puces héros (`.hero-points`), ligne marques (`.brands`), badge « Avis vérifié », ligne « Le plus demandé » (`.is-pop`), scroll-padding, sélection colorée.
+- Ne jamais refondre sans validation du client (historique : refonte animations/compteurs rejetée puis peau v2 demandée).
+
+## ATTENTION ENCODAGE (très important)
+- Les fichiers sont UTF-8. NE JAMAIS réécrire un `.html`/`.js` avec `Set-Content`/`Get-Content` en PowerShell : ça casse les accents. Utiliser les outils d'édition, ou `git checkout -- <fichier>` pour restaurer.
 
 ## Publication
 - Dépôt GitHub : `dedel38780/lam-phone` (branche `main`).

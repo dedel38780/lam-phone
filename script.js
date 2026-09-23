@@ -101,3 +101,23 @@ if (isTouch) {
 } else {
   window.addEventListener("mousemove", onMouse);
 }
+
+document.documentElement.classList.add("js-ready");
+
+var revEls = document.querySelectorAll(".rev");
+function showRev(el) {
+  el.classList.add("in");
+}
+if ("IntersectionObserver" in window && revEls.length) {
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) {
+        showRev(en.target);
+        io.unobserve(en.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revEls.forEach(function (el) { io.observe(el); });
+} else {
+  revEls.forEach(showRev);
+}
