@@ -902,6 +902,15 @@ a.info-item:hover {
   animation: floatChip 5s ease-in-out infinite;
 }
 
+a.float-chip {
+  text-decoration: none;
+  transition: box-shadow 0.2s ease;
+}
+
+a.float-chip:hover {
+  box-shadow: 0 16px 36px rgba(2, 132, 199, 0.45);
+}
+
 .float-chip.chip-1 {
   top: 70px;
   left: -30px;
