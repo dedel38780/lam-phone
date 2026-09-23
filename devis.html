@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Demandez votre devis gratuit en 30 secondes pour votre téléphone ou ordinateur : remplacement d'écran, batterie, port de charge, caméra, dégâts d'eau. Lam Phone, Pont-Évêque.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dedel38780.github.io/lam-phone/devis.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lam Phone">
+  <meta property="og:title" content="Devis gratuit - Lam Phone (30 secondes, sans engagement)">
+  <meta property="og:description" content="Décrivez votre panne et recevez votre devis gratuit immédiatement sur WhatsApp.">
+  <meta property="og:url" content="https://dedel38780.github.io/lam-phone/devis.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230ea5e9'/%3E%3Cpath d='M7 4h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z' fill='%23fff'/%3E%3Crect x='11' y='17.5' width='2' height='1.5' rx='0.75' fill='%230c4a6e'/%3E%3C/svg%3E">
+  <title>Devis gratuit - Lam Phone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="has-cta-bar">
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Lam<span>Phone</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html#accueil">Accueil</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#tarifs">Tarifs</a>
+        <a href="devis.html" class="active">Devis</a>
+        <a href="avis.html">Avis</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="devis-page">
+    <div class="container">
+      <h2>Devis gratuit en 30 secondes</h2>
+      <p class="contact-slogan">Décrivez votre panne : votre devis exact vous arrive <em>immédiatement sur WhatsApp</em>. Réponse <em>24h/24, 7j/7</em>, sans engagement.</p>
+
+      <div class="devis-grid">
+        <form id="devisForm" class="form-card">
+          <label for="d-nom">Votre prénom</label>
+          <input type="text" id="d-nom" name="nom" required placeholder="Ex. : Karim" autocomplete="name">
+
+          <label for="d-tel">Votre numéro (facultatif)</label>
+          <input type="tel" id="d-tel" name="tel" placeholder="Ex. : 06 12 34 56 78" autocomplete="tel">
+
+          <label for="d-modele">Marque et modèle de l'appareil</label>
+          <input type="text" id="d-modele" name="modele" required placeholder="Ex. : iPhone 13, Galaxy S22, HP Pavilion..." autocomplete="off">
+
+          <label for="d-panne">Type de panne</label>
+          <select id="d-panne" name="panne" required>
+            <option value="" disabled selected>Choisissez la panne</option>
+            <option>Écran cassé / fissuré</option>
+            <option>Batterie faible / gonflée</option>
+            <option>Ne charge plus / port de charge</option>
+            <option>Caméra ou son</option>
+            <option>Dégât d'eau</option>
+            <option>Ordinateur (lent, écran, clavier...)</option>
+            <option>Autre</option>
+          </select>
+
+          <label for="d-msg">Décrivez la panne (facultatif)</label>
+          <textarea id="d-msg" name="msg" rows="3" placeholder="Ex. : l'écran ne répond plus en haut à gauche..."></textarea>
+
+          <button type="submit" class="btn btn-block">Recevoir mon devis gratuit sur WhatsApp</button>
+          <p class="form-note">En cliquant, WhatsApp s'ouvre avec votre demande déjà rédigée. Vous n'avez plus qu'à envoyer.</p>
+        </form>
+
+        <aside class="devis-aside">
+          <div class="card">
+            <h3>Ou contactez-nous direct</h3>
+            <p>Vous préférez parler à quelqu'un ?</p>
+            <a href="tel:+33763517025" class="btn btn-call btn-block">Appeler le 07 63 51 70 25</a>
+            <a href="https://wa.me/33763517025?text=Bonjour%20Lam%20Phone%2C%20je%20souhaite%20un%20devis%20pour%20une%20r%C3%A9paration." target="_blank" rel="noopener" class="btn btn-wa btn-block">Écrire sur WhatsApp</a>
+          </div>
+          <div class="card">
+            <h3>Nos prix dès maintenant</h3>
+            <ul class="price-list">
+              <li>Écran : dès 49 € (Android) / 69 € (iPhone)</li>
+              <li>Batterie : dès 29 € (Android) / 39 € (iPhone)</li>
+              <li>Port de charge : dès 35 €</li>
+              <li>Diagnostic : <strong>gratuit</strong></li>
+            </ul>
+            <p class="form-note">Réparation express en 30 minutes. Garantie et test complet inclus.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-logo">Lam<span>Phone</span></p>
+        <p>Réparation de téléphones et ordinateurs à Pont-Évêque (38780). Devis gratuit, réparation express.</p>
+      </div>
+      <div>
+        <p class="footer-title">Contact</p>
+        <p><a href="tel:+33763517025">07 63 51 70 25</a></p>
+        <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=lamphone38@gmail.com&su=Demande%20de%20devis%20Lam%20Phone" target="_blank" rel="noopener">lamphone38@gmail.com</a></p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Pont-%C3%89v%C3%A8que+38780" target="_blank" rel="noopener">Pont-Évêque, 38780</a></p>
+      </div>
+      <div>
+        <p class="footer-title">Horaires</p>
+        <p>24h/24 · 7j/7</p>
+        <p class="small">Sur rendez-vous et urgences</p>
+      </div>
+    </div>
+    <div class="container legal">
+      <p>&copy; <span id="year"></span> Lam Phone - Réparation de téléphones. Tous droits réservés.</p>
+      <p class="small">Lam Phone, micro-entrepreneur (auto-entrepreneur) · Pont-Évêque, 38780 · SIRET : 838 821 817 00023 · TVA non applicable, art. 293 B du CGI.</p>
+    </div>
+  </footer>
+
+  <div class="cta-bar">
+    <a href="tel:+33763517025" class="cta-bar-call">Appeler maintenant</a>
+    <a href="https://wa.me/33763517025?text=Bonjour%20Lam%20Phone%2C%20je%20souhaite%20un%20devis%20pour%20une%20r%C3%A9paration." target="_blank" rel="noopener" class="cta-bar-wa">WhatsApp</a>
+  </div>
+
+  <a class="whatsapp" href="https://wa.me/33763517025?text=Bonjour%20Lam%20Phone%2C%20je%20souhaite%20un%20devis%20pour%20une%20r%C3%A9paration." target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true">
+      <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 13.9c-.2.6-1.2 1.2-1.7 1.2-.6.1-1.3.1-1.5 0-1.1-.2-5.6-2.3-7.2-6.8-.5-1.4.9-2.5 1.6-3 .2-.1.4-.1.5 0l.7 1.6c.1.2 0 .4-.1.6l-.3.5c-.2.2-.4.4-.2.7.7 1.3 2.4 3.1 3.8 3.9.4.2.6.2.8-.1l.6-.7c.2-.2.3-.2.5-.1l1.7 1.2c.2.1.4.3.4.5 0 .1-.2.6-.6 1.3Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

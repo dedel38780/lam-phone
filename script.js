@@ -9,14 +9,25 @@ if (menuBtn && navLinks) {
 var yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-var form = document.getElementById("contactForm");
-var formMsg = document.getElementById("formMsg");
-if (form && formMsg) {
-  form.addEventListener("submit", function (e) {
+var devisForm = document.getElementById("devisForm");
+if (devisForm) {
+  devisForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    var nom = document.getElementById("nom");
-    formMsg.textContent = "Merci " + (nom ? nom.value : "") + " ! Votre demande a bien été reçue, nous vous rappelons au plus vite.";
-    form.reset();
+    var nom = document.getElementById("d-nom").value.trim();
+    var tel = document.getElementById("d-tel").value.trim();
+    var modele = document.getElementById("d-modele").value.trim();
+    var panne = document.getElementById("d-panne").value;
+    var msg = document.getElementById("d-msg").value.trim();
+
+    var lignes = ["Bonjour Lam Phone, je souhaite un devis gratuit pour une réparation :"];
+    if (nom) lignes.push("Prénom : " + nom);
+    if (tel) lignes.push("Mon numéro : " + tel);
+    if (modele) lignes.push("Appareil : " + modele);
+    if (panne) lignes.push("Panne : " + panne);
+    if (msg) lignes.push("Détails : " + msg);
+    lignes.push("Merci de m'envoyer un devis.");
+
+    window.open("https://wa.me/33763517025?text=" + encodeURIComponent(lignes.join("\n")), "_blank");
   });
 }
 

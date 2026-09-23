@@ -13,8 +13,15 @@ Site vitrine d'un réparateur de téléphones et ordinateurs à Pont-Évêque (3
 
 ## Fichiers
 - `index.html` : accueil (héro téléphone, stats, services, tarifs, avis, CTA, footer)
-- `contact.html`, `appel.html`, `avis.html` : pages reliées par le menu (Accueil / Services / Tarifs / Avis / Contact)
-- `style.css`, `script.js`, `affiche-lam-phone.html` (affiche QR à imprimer), `qr-lam-phone.png`
+- `devis.html` : formulaire de devis qui envoie la demande sur WhatsApp (+33763517025) — ne PAS casser le handler `devisForm` dans script.js
+- `contact.html`, `appel.html`, `avis.html` : pages reliées par le menu (Accueil / Services / Tarifs / Devis / Avis / Contact)
+- `style.css`, `script.js`, `affiche-lam-phone.html` (affiche QR à imprimer), `qr-lam-phone.png`, `404.html`, `robots.txt`, `sitemap.xml`
+
+## Générateur de revenus (toujours respecter)
+- Le CTA PRINCIPAL des pages = **appel** (`tel:+33763517025`) puis WhatsApp.
+- Tous les « Devis gratuit » pointent vers `devis.html`.
+- Barre d'action fixe sur mobile : `.cta-bar` (2 boutons : appeler / WhatsApp).
+- Formulaire Devis → ouvre `wa.me/33763517025` avec la demande pré-remplie (pas de serveur, rien n'est stocké).
 
 ## Design (au goût du client : sobre, pro)
 - Accent `#0ea5e9`, foncé `#0369a1`, fond `#f4f8fc`, encre `#0c4a6e`, texte `#334155`.

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dedel38780.github.io/lam-phone/sitemap.xml
