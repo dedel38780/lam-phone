@@ -2025,3 +2025,171 @@ tr.is-pop td:first-child {
   font-size: 0.9rem;
   color: #334155;
 }
+
+/* --- Indicateur de frappe + chips défilables --- */
+.msg.bot.typing {
+  color: #64748b;
+  font-weight: 600;
+  letter-spacing: 2px;
+  animation: typingBlink 0.9s ease-in-out infinite;
+}
+
+@keyframes typingBlink {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+
+.chat-quick {
+  max-height: 72px;
+  overflow-y: auto;
+}
+
+/* ====================== Intro illusion d'optique ====================== */
+
+.intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 950;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0b1f3a, #0e3a63 55%, #073a5e);
+  overflow: hidden;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.45s ease, visibility 0.45s;
+}
+
+.intro-overlay.gone {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+html.intro-lock {
+  overflow: hidden;
+}
+
+.intro-stage {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-out;
+}
+
+.intro-overlay.go .intro-stage {
+  transform: scale(1.12);
+}
+
+.spiro {
+  position: absolute;
+  inset: 0;
+}
+
+.spiro-ring {
+  position: absolute;
+  border-radius: 50%;
+  animation: spinC 7s linear infinite;
+  mix-blend-mode: screen;
+}
+
+.spiro-ring.r1 {
+  inset: 0;
+  background: repeating-conic-gradient(from 0deg, rgba(56, 189, 248, 0) 0deg 13deg, rgba(56, 189, 248, 0.16) 13deg 26deg);
+  animation-duration: 6s;
+}
+
+.spiro-ring.r2 {
+  inset: 34px;
+  background: repeating-conic-gradient(from 10deg, rgba(125, 211, 252, 0) 0deg 18deg, rgba(125, 211, 252, 0.14) 18deg 36deg);
+  animation: spinCC 5s linear infinite;
+}
+
+.spiro-ring.r3 {
+  inset: 66px;
+  background: repeating-conic-gradient(from 30deg, rgba(56, 189, 248, 0) 0deg 26deg, rgba(14, 165, 233, 0.16) 26deg 52deg);
+  animation: spinC 3.6s linear infinite;
+}
+
+.spiro-ring.r4 {
+  inset: 96px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.55), rgba(14, 165, 233, 0) 68%);
+  animation: spinCC 9s linear infinite;
+  mix-blend-mode: screen;
+}
+
+@keyframes spinC {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spinCC {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.intro-core {
+  position: relative;
+  z-index: 2;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #0ea5e9, #0369a1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 0.62rem;
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: 0 0 40px rgba(14, 165, 233, 0.55), inset 0 0 18px rgba(255, 255, 255, 0.25);
+  animation: coreBreath 2.4s ease-in-out infinite;
+}
+
+@keyframes coreBreath {
+  0%, 100% { box-shadow: 0 0 30px rgba(14, 165, 233, 0.45), inset 0 0 18px rgba(255, 255, 255, 0.2); }
+  50% { box-shadow: 0 0 60px rgba(14, 165, 233, 0.8), inset 0 0 22px rgba(255, 255, 255, 0.32); }
+}
+
+.intro-logo {
+  position: absolute;
+  z-index: 3;
+  bottom: -78px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  animation: introUp 0.8s ease-out both;
+}
+
+.intro-logo span {
+  color: #38bdf8;
+}
+
+@keyframes introUp {
+  from { opacity: 0; transform: translate(-50%, 12px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+.intro-overlay.go .intro-logo {
+  animation: introFade 0.5s ease-in both;
+}
+
+@keyframes introFade {
+  from { opacity: 1; }
+  to { opacity: 0.25; }
+}
+
+.intro-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(11, 31, 58, 0.35) 100%);
+}
