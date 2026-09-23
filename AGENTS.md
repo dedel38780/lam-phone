@@ -13,9 +13,16 @@ Site vitrine d'un réparateur de téléphones et ordinateurs à Pont-Évêque (3
 
 ## Fichiers
 - `index.html` : accueil (héro téléphone, stats, services, tarifs, avis, CTA, footer)
+- `assistance.html` : page Assistance = assistant virtuel (chat flottant + FAQ). Le chat est aussi sur toutes les pages.
 - `devis.html` : formulaire de devis qui envoie la demande sur WhatsApp (+33763517025) — ne PAS casser le handler `devisForm` dans script.js
-- `contact.html`, `appel.html`, `avis.html` : pages reliées par le menu (Accueil / Services / Tarifs / Devis / Avis / Contact)
+- `contact.html`, `appel.html`, `avis.html` : pages reliées par le menu (Accueil / Services / Tarifs / Assistance / Devis / Avis / Contact)
 - `style.css`, `script.js`, `affiche-lam-phone.html` (affiche QR à imprimer), `qr-lam-phone.png`, `404.html`, `robots.txt`, `sitemap.xml`
+
+## Assistance virtuelle (chat, fonctionne sans serveur)
+- Widget chat sur toutes les pages (bouton en bas à gauche, `.chat-btn` ; fenêtre `.chat-panel`).
+- Moteur dans `script.js` : `CHAT_INTENTS` (mots-clés + réponses), scoring par longueur de mot clé ; repli `CHAT_FALLBACK` → appelle/WhatsApp quand il ne sait pas.
+- Réponses = contenu réel du site (tarifs, horaires 24/7, Pont-Évêque + déplacement, toutes marques, diagnostic gratuit). Ne PAS inventer de garantie.
+- Ne casse pas : normalize (accents), gère accents via `normalize("NFD")`, chaîne `script.js` chaque page.
 
 ## Générateur de revenus (toujours respecter)
 - Le CTA PRINCIPAL des pages = **appel** (`tel:+33763517025`) puis WhatsApp.

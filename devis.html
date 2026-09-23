@@ -32,6 +32,7 @@
         <a href="index.html#accueil">Accueil</a>
         <a href="index.html#services">Services</a>
         <a href="index.html#tarifs">Tarifs</a>
+        <a href="assistance.html">Assistance</a>
         <a href="devis.html" class="active">Devis</a>
         <a href="avis.html">Avis</a>
         <a href="contact.html">Contact</a>
@@ -130,6 +131,38 @@
       <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 13.9c-.2.6-1.2 1.2-1.7 1.2-.6.1-1.3.1-1.5 0-1.1-.2-5.6-2.3-7.2-6.8-.5-1.4.9-2.5 1.6-3 .2-.1.4-.1.5 0l.7 1.6c.1.2 0 .4-.1.6l-.3.5c-.2.2-.4.4-.2.7.7 1.3 2.4 3.1 3.8 3.9.4.2.6.2.8-.1l.6-.7c.2-.2.3-.2.5-.1l1.7 1.2c.2.1.4.3.4.5 0 .1-.2.6-.6 1.3Z"/>
     </svg>
   </a>
+
+  <div class="chat-widget">
+    <div class="chat-panel" id="chatPanel" aria-hidden="true">
+      <div class="chat-head">
+        <div class="chat-avatar">LP</div>
+        <div class="chat-head-info">
+          <strong>Assistance Lam Phone</strong>
+          <span>En ligne maintenant</span>
+        </div>
+        <button class="chat-close" id="chatClose" aria-label="Fermer le chat">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="chat-msgs" id="chatMsgs" role="log" aria-live="polite"></div>
+      <div class="chat-quick" id="chatQuick">
+        <button>Quels sont vos tarifs&nbsp;?</button>
+        <button>Comment obtenir un devis&nbsp;?</button>
+        <button>O&ugrave; &ecirc;tes-vous situ&eacute;&nbsp;?</button>
+        <button>R&eacute;pares-vous les ordinateurs&nbsp;?</button>
+      </div>
+      <form class="chat-input" id="chatForm">
+        <input id="chatText" type="text" placeholder="&Eacute;crivez votre question&hellip;" autocomplete="off">
+        <button type="submit" class="chat-send" aria-label="Envoyer">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13"/><path d="M13 6l6 6-6 6"/></svg>
+        </button>
+      </form>
+    </div>
+    <button class="chat-btn" id="chatBtn" aria-label="Ouvrir l'assistance virtuelle">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1 0-2-.2-2.9-.5L4 21l1.5-3.6A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+      <span class="chat-pulse"></span>
+    </button>
+  </div>
 
   <script src="script.js"></script>
 </body>
