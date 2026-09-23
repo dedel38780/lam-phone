@@ -429,6 +429,42 @@ var CHIP_SUGGESTIONS = [
   });
 })();
 
+/* ====================== Google Analytics + bandeau RGPD ====================== */
+
+(function gaInit() {
+  var ID = "G-PYYDF2GKPQ";
+  var c = "";
+  try { c = localStorage.getItem("lamGA") || ""; } catch (e) {}
+  if (c === "yes") { loadGA(); return; }
+  if (c === "no") return;
+  var b = document.createElement("div");
+  b.className = "ga-banner";
+  b.setAttribute("role", "dialog");
+  b.setAttribute("aria-label", "Consentement aux cookies");
+  b.innerHTML = '<p class="ga-text">Nous utilisons des cookies pour mesurer la fr\u00e9quentation du site.</p><div class="ga-btns"><button type="button" class="ga-ok">Accepter</button><button type="button" class="ga-no">Refuser</button></div>';
+  document.body.appendChild(b);
+  b.querySelector(".ga-ok").addEventListener("click", function () {
+    try { localStorage.setItem("lamGA", "yes"); } catch (e) {}
+    if (b.parentNode) b.parentNode.removeChild(b);
+    loadGA();
+  });
+  b.querySelector(".ga-no").addEventListener("click", function () {
+    try { localStorage.setItem("lamGA", "no"); } catch (e) {}
+    if (b.parentNode) b.parentNode.removeChild(b);
+  });
+  function loadGA() {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag("js", new Date());
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + ID;
+    document.head.appendChild(s);
+    gtag("config", ID, { send_page_view: true });
+  }
+})();
+
 /* ====================== Intro illusion d'optique ====================== */
 
 (function introInit() {

@@ -16,7 +16,13 @@ Site vitrine d'un réparateur de téléphones et ordinateurs à Pont-Évêque (3
 - `assistance.html` : page Assistance = assistant virtuel (chat flottant + FAQ). Le chat est aussi sur toutes les pages.
 - `devis.html` : formulaire de devis qui envoie la demande sur WhatsApp (+33763517025) — ne PAS casser le handler `devisForm` dans script.js
 - `contact.html`, `appel.html`, `avis.html` : pages reliées par le menu (Accueil / Services / Tarifs / Assistance / Devis / Avis / Contact)
-- `style.css`, `script.js`, `affiche-lam-phone.html` (affiche QR à imprimer), `qr-lam-phone.png`, `404.html`, `robots.txt`, `sitemap.xml`
+- `style.css`, `script.js`, `affiche-lam-phone.html` (affiche QR à imprimer), `qr-lam-phone.png`, `qr-site-lam-phone.png`, `qr-whatsapp.png`, `qr-snapchat.png`, `qr-lam-phone38.png`, `qr-lam-phone-tiktok.png`, `404.html`, `robots.txt`, `sitemap.xml`
+
+## Statistiques de visite
+- **Google Analytics 4** : ID de mesure `G-PYYDF2GKPQ` (ne pas changer/dupliquer).
+- Installé via `script.js` (module `gaInit`) : gtag chargé **après** acceptation du bandeau RGPD ; choix stocké dans `localStorage` (`lamGA` = `yes`/`no`).
+- Bandeau cookies `.ga-banner` injecté par JS (textes + boutons Accepter/Refuser).
+- Lire les stats : https://analytics.google.com avec le compte `lamphone38@gmail.com` → « Site Lam Phone » → Rapports / Realtime.
 
 ## Assistance virtuelle (chat, fonctionne sans serveur)
 - Widget chat sur toutes les pages (bouton en bas à gauche, `.chat-btn` ; fenêtre `.chat-panel`).
