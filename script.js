@@ -484,16 +484,16 @@ var CHIP_SUGGESTIONS = [
 
   window.setTimeout(function () {
     ov.classList.add("go");
-  }, 1150);
+  }, 2750);
 
   window.setTimeout(function () {
     ov.classList.add("gone");
     document.documentElement.classList.remove("intro-lock");
-  }, 1300);
+  }, 3000);
 
   window.setTimeout(function () {
     if (ov.parentNode) ov.parentNode.removeChild(ov);
-  }, 1950);
+  }, 3650);
 
   try { sessionStorage.setItem("lamIntro", "1"); } catch (e) {}
 })();
