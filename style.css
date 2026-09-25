@@ -95,10 +95,7 @@ blockquote footer {
   text-align: center;
   position: relative;
   overflow: hidden;
-  min-height: calc(100vh - 76px);
-  display: flex;
-  align-items: center;
-  padding: 90px 0 110px;
+  padding: 56px 0 72px;
   background: linear-gradient(105deg, rgba(11, 31, 58, 0.94) 0%, rgba(11, 31, 58, 0.8) 34%, rgba(11, 31, 58, 0.38) 62%, rgba(11, 31, 58, 0.55) 100%), url("photo-accueil.jpg") center / cover no-repeat;
 }
 
@@ -980,7 +977,7 @@ a.stat:hover span {
   }
 
   .hero {
-    padding: 60px 0;
+    padding: 44px 0 56px;
   }
 
   .hero h1 {
