@@ -614,11 +614,6 @@ textarea:focus {
   box-shadow: inset 0 0 0 2px rgba(234, 67, 53, 0.35);
 }
 
-.contact-card .card-icon.ic-discord {
-  color: #5865f2;
-  box-shadow: inset 0 0 0 2px rgba(88, 101, 242, 0.35);
-}
-
 .contact-label {
   font-family: "Poppins", "Segoe UI", Arial, sans-serif;
   font-weight: 700;
@@ -683,12 +678,6 @@ a.info-item:hover {
 .btn-wa {
   background: linear-gradient(135deg, #25d366, #1da851);
   box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
-  margin-top: 10px;
-}
-
-.btn-discord {
-  background: linear-gradient(135deg, #7c8ff0, #5865f2);
-  box-shadow: 0 6px 18px rgba(88, 101, 242, 0.45);
   margin-top: 10px;
 }
 
@@ -1325,7 +1314,7 @@ a.stat:hover span {
 @media (max-width: 768px) {
   .cta-bar {
     display: grid;
-    grid-template-columns: 1.25fr 1fr 1fr;
+    grid-template-columns: 1.25fr 1fr;
     gap: 8px;
     position: fixed;
     left: 0;
@@ -1355,11 +1344,6 @@ a.stat:hover span {
 
   .cta-bar-wa {
     background: #25d366;
-    color: #fff;
-  }
-
-  .cta-bar-discord {
-    background: #5865f2;
     color: #fff;
   }
 
