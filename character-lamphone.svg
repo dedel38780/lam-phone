@@ -1,50 +1,169 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 560" role="img" aria-label="Technicien Lam Phone vêtu de noir, casquette et tee-shirt LAMPHONE">
-  <style>
-    .t { font-family: Poppins, "Segoe UI", Arial, sans-serif; font-weight: 800; text-anchor: middle; }
-  </style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 640" role="img" aria-label="Technicien Lam Phone vêtu de noir, casquette et tee-shirt LAMPHONE, réparation à domicile secteur Vienne">
+  <defs>
+    <radialGradient id="skin" cx="50%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#f2c9a2"/>
+      <stop offset="60%" stop-color="#e0a878"/>
+      <stop offset="100%" stop-color="#c98e62"/>
+    </radialGradient>
+    <linearGradient id="tee" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#23252b"/>
+      <stop offset="55%" stop-color="#14161a"/>
+      <stop offset="100%" stop-color="#0c0d10"/>
+    </linearGradient>
+    <linearGradient id="capG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#191a1f"/>
+      <stop offset="100%" stop-color="#0a0b0d"/>
+    </linearGradient>
+    <linearGradient id="jeans" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#20232a"/>
+      <stop offset="100%" stop-color="#101216"/>
+    </linearGradient>
+    <linearGradient id="shoe" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#d9dfe7"/>
+    </linearGradient>
+    <linearGradient id="scr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <radialGradient id="iris" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#7a5230"/>
+      <stop offset="100%" stop-color="#2c1e10"/>
+    </radialGradient>
+    <radialGradient id="blush" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e09a78" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#e09a78" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
 
-  <ellipse cx="170" cy="545" rx="106" ry="14" fill="#0b1f3a" opacity="0.16"/>
+  <!-- Ombre au sol -->
+  <ellipse cx="210" cy="610" rx="130" ry="16" fill="#0b1f3a" opacity="0.18"/>
 
-  <rect x="128" y="420" width="38" height="92" rx="16" fill="#141519"/>
-  <rect x="174" y="420" width="38" height="92" rx="16" fill="#141519"/>
+  <!-- Jambes (jean noir) -->
+  <path d="M170 404 L158 576 L180 576 L192 404 Z" fill="url(#jeans)"/>
+  <path d="M228 404 L240 576 L262 576 L250 404 Z" fill="url(#jeans)"/>
+  <path d="M175 408 L164 572" stroke="#0a0b0e" stroke-width="1.5" fill="none"/>
+  <path d="M245 408 L256 572" stroke="#0a0b0e" stroke-width="1.5" fill="none"/>
 
-  <rect x="116" y="502" width="58" height="30" rx="12" fill="#f8fafc"/>
-  <rect x="166" y="502" width="58" height="30" rx="12" fill="#f8fafc"/>
-  <rect x="121" y="516" width="50" height="13" rx="6" fill="#0b1f3a" opacity="0.16"/>
-  <rect x="171" y="516" width="50" height="13" rx="6" fill="#0b1f3a" opacity="0.16"/>
+  <!-- Sneakers -->
+  <path d="M128 574 h70 a18 18 0 0 1 18 18 v8 a8 8 0 0 1 -8 8 h-80 a8 8 0 0 1 -8 -8 v-8 a18 18 0 0 1 8 -18 Z" fill="url(#shoe)"/>
+  <path d="M222 574 h70 a18 18 0 0 1 18 18 v8 a8 8 0 0 1 -8 8 h-80 a8 8 0 0 1 -8 -8 v-8 a18 18 0 0 1 8 -18 Z" fill="url(#shoe)"/>
+  <path d="M132 588 h64" stroke="#c0c8d2" stroke-width="2"/>
+  <path d="M226 588 h64" stroke="#c0c8d2" stroke-width="2"/>
+  <path d="M130 600 h70 v4 a8 8 0 0 1 -8 8 h-54 a8 8 0 0 1 -8 -8 Z" fill="#b9c2cd"/>
+  <path d="M224 600 h70 v4 a8 8 0 0 1 -8 8 h-54 a8 8 0 0 1 -8 -8 Z" fill="#b9c2cd"/>
 
-  <path d="M106 238 Q74 300 96 388 L112 434 Q170 448 228 434 L244 388 Q266 300 234 238 Q206 214 170 214 Q134 214 106 238 Z" fill="#141519"/>
+  <!-- Torse tee-shirt noir -->
+  <path d="M136 210 C 118 238, 124 306, 140 366 L154 412 C 176 424, 244 424, 266 412 L280 366 C 296 306, 302 238, 284 210 C 262 198, 232 192, 210 192 C 188 192, 158 198, 136 210 Z" fill="url(#tee)"/>
+  <path d="M150 232 C 142 280, 146 340, 162 396" stroke="#ffffff" stroke-width="5" stroke-linecap="round" fill="none" opacity="0.05"/>
+  <path d="M270 236 C 278 284, 276 344, 262 398" stroke="#000000" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.35"/>
+  <!-- Plis du tissu -->
+  <path d="M196 244 C 202 268, 198 300, 204 330" stroke="#000000" stroke-width="3" fill="none" opacity="0.28"/>
+  <path d="M224 246 C 230 272, 226 306, 232 336" stroke="#000000" stroke-width="3" fill="none" opacity="0.28"/>
+  <path d="M164 420 Q 210 436 256 420" stroke="#ffffff" stroke-width="4" fill="none" opacity="0.06"/>
 
-  <path d="M118 238 Q94 300 108 392 L128 392 Q118 306 138 240 Z" fill="#17181d"/>
-  <circle cx="112" cy="402" r="15" fill="#e7b38c"/>
+  <!-- Impression tee-shirt -->
+  <text x="210" y="272" font-family="Poppins, Segoe UI, Arial, sans-serif" font-weight="800" font-size="20" letter-spacing="3.5" text-anchor="middle" fill="#0ea5e9">LAMPHONE</text>
+  <text x="210" y="272" font-family="Poppins, Segoe UI, Arial, sans-serif" font-weight="800" font-size="20" letter-spacing="3.5" text-anchor="middle" fill="#ffffff" opacity="0.14">LAMPHONE</text>
+  <rect x="176" y="286" width="68" height="3" rx="1.5" fill="#22d3ee"/>
 
-  <path d="M222 238 Q246 300 232 392 L212 392 Q222 306 202 240 Z" fill="#17181d"/>
-  <circle cx="228" cy="402" r="15" fill="#e7b38c"/>
+  <!-- Manches tee-shirt -->
+  <path d="M142 208 C 128 228, 126 252, 132 272 C 135 281, 147 283, 151 276 C 160 262, 162 240, 158 202 Z" fill="url(#tee)"/>
+  <path d="M278 208 C 292 228, 294 252, 288 272 C 285 281, 273 283, 269 276 C 260 262, 258 240, 262 202 Z" fill="url(#tee)"/>
 
-  <g transform="rotate(8 214 352)">
-    <rect x="194" y="306" width="46" height="96" rx="9" fill="#0f172a" stroke="#2c3648" stroke-width="2"/>
-    <rect x="200" y="322" width="34" height="62" rx="5" fill="#0b1f3a"/>
-    <rect x="206" y="330" width="22" height="40" rx="4" fill="#0ea5e9"/>
-    <text x="217" y="356" class="t" font-size="20" fill="#ffffff">38</text>
-    <rect x="212" y="394" width="10" height="3" rx="1.5" fill="#475569"/>
-  </g>
+  <!-- Avant-bras + mains (peau) -->
+  <path d="M136 268 C 140 300, 136 330, 130 354 C 128 362, 141 364, 145 358 C 152 342, 154 306, 158 272 Z" fill="url(#skin)"/>
+  <path d="M284 268 C 280 300, 284 330, 290 354 C 292 362, 279 364, 275 358 C 268 342, 266 306, 262 272 Z" fill="url(#skin)"/>
 
-  <rect x="152" y="192" width="36" height="26" rx="10" fill="#e7b38c"/>
-  <circle cx="170" cy="118" r="60" fill="#e7b38c"/>
-  <circle cx="108" cy="116" r="11" fill="#dfa87c"/>
-  <circle cx="232" cy="116" r="11" fill="#dfa87c"/>
+  <!-- Main gauche (doigts) -->
+  <ellipse cx="140" cy="372" rx="17" ry="20" fill="url(#skin)"/>
+  <path d="M130 352 a7.5 7.5 0 0 1 14 0 v20 a7.5 7.5 0 0 1 -14 0 Z" fill="url(#skin)"/>
+  <path d="M139 349 a7.5 7.5 0 0 1 14 0 v23 a7.5 7.5 0 0 1 -14 0 Z" fill="url(#skin)"/>
+  <path d="M148 352 a7.5 7.5 0 0 1 14 0 v20 a7.5 7.5 0 0 1 -14 0 Z" fill="url(#skin)"/>
 
-  <rect x="142" y="114" width="17" height="10" rx="5" fill="#23272e"/>
-  <rect x="181" y="114" width="17" height="10" rx="5" fill="#23272e"/>
-  <rect x="139" y="102" width="22" height="4" rx="2" fill="#2b241d"/>
-  <rect x="179" y="102" width="22" height="4" rx="2" fill="#2b241d"/>
-  <circle cx="170" cy="132" r="6" fill="#d9a273"/>
-  <path d="M150 146 Q170 162 190 146" fill="none" stroke="#8a5a36" stroke-width="5" stroke-linecap="round"/>
+  <!-- Téléphone dans la main droite -->
+  <rect x="300" y="288" width="60" height="118" rx="15" fill="#0f172a" stroke="#2c3648" stroke-width="2.5"/>
+  <rect x="306" y="304" width="48" height="84" rx="7" fill="#0b1f3a"/>
+  <rect x="310" y="312" width="40" height="62" rx="5" fill="url(#scr)"/>
+  <text x="330" y="350" font-family="Poppins, Segoe UI, Arial, sans-serif" font-weight="800" font-size="26" text-anchor="middle" fill="#ffffff">38</text>
+  <rect x="322" y="382" width="16" height="4" rx="2" fill="#475569"/>
+  <ellipse cx="330" cy="298" rx="7" ry="2.5" fill="#0b1f3a"/>
 
-  <path d="M102 76 Q94 40 170 42 Q248 40 238 76 Q232 92 200 94 L140 94 Q106 92 102 76 Z" fill="#0b0c0e"/>
-  <rect x="104" y="74" width="132" height="20" rx="7" fill="#16181d"/>
-  <text x="170" y="90" class="t" font-size="12.5" letter-spacing="2" fill="#ffffff">LAMPHONE</text>
-  <path d="M100 92 Q168 124 240 92 L248 106 Q170 138 92 106 Z" fill="#0b0c0e"/>
+  <!-- Main droite tenant le téléphone -->
+  <ellipse cx="282" cy="366" rx="17" ry="20" fill="url(#skin)"/>
+  <path d="M272 344 a7.5 7.5 0 0 1 14 0 v26 a7.5 7.5 0 0 1 -14 0 Z" fill="url(#skin)"/>
+  <path d="M281 341 a7.5 7.5 0 0 1 14 0 v29 a7.5 7.5 0 0 1 -14 0 Z" fill="url(#skin)"/>
+  <path d="M272 366 L300 366" stroke="#a5744b" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
 
-  <text x="170" y="318" class="t" font-size="17" letter-spacing="1.5" fill="#ffffff">LAMPHONE</text>
+  <!-- Cou -->
+  <path d="M196 172 h28 a6 6 0 0 1 6 6 v20 a6 6 0 0 1 -6 6 h-28 a6 6 0 0 1 -6 -6 v-20 a6 6 0 0 1 6 -6 Z" fill="url(#skin)"/>
+  <path d="M198 186 h24" stroke="#b37f57" stroke-width="2" opacity="0.4"/>
+  <!-- Col rond + ombre intérieure -->
+  <path d="M176 196 Q210 214 244 196 L244 204 Q210 224 176 204 Z" fill="#0a0b0e"/>
+  <path d="M182 206 Q210 222 238 206" stroke="#000000" stroke-width="3" fill="none" opacity="0.45"/>
+
+  <!-- Cheveux courts sur les côtés -->
+  <path d="M160 104 C 154 128, 156 146, 166 158 L176 150 C 168 136, 167 118, 172 102 Z" fill="#171512"/>
+  <path d="M260 104 C 266 128, 264 146, 254 158 L244 150 C 252 136, 253 118, 248 102 Z" fill="#171512"/>
+
+  <!-- Oreilles -->
+  <ellipse cx="160" cy="132" rx="9" ry="13" fill="#d9a070"/>
+  <ellipse cx="260" cy="132" rx="9" ry="13" fill="#d9a070"/>
+  <path d="M160 124 a4 6 0 0 1 4 8" stroke="#b9854f" stroke-width="1.6" fill="none" opacity="0.7"/>
+
+  <!-- Visage -->
+  <path d="M210 96 C 248 96, 266 118, 264 138 C 262 156, 242 176, 212 180 C 178 176, 156 156, 153 138 C 151 118, 170 96, 210 96 Z" fill="url(#skin)"/>
+  <path d="M156 138 C 158 120, 176 102, 210 102 C 244 102, 262 120, 264 138 C 266 154, 246 172, 212 176 C 178 172, 158 154, 156 138 Z" fill="#ffffff" opacity="0.06"/>
+  <!-- Menton + ombre sous-chin -->
+  <path d="M182 172 Q 210 186 238 172" stroke="#a5744b" stroke-width="3" fill="none" opacity="0.25"/>
+
+  <!-- Sourcils -->
+  <path d="M182 108 Q 194 102 208 107" stroke="#231b12" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M212 107 Q 226 102 238 108" stroke="#231b12" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Œil gauche -->
+  <ellipse cx="196" cy="127" rx="13" ry="8" fill="#fbfcfe" stroke="#c9ccd4" stroke-width="1"/>
+  <path d="M183 122 Q 196 116 209 122 L 206 128 Q 196 124 186 128 Z" fill="#d9c4a8" opacity="0.55"/>
+  <circle cx="197" cy="127" r="6.5" fill="url(#iris)"/>
+  <circle cx="197" cy="127" r="3" fill="#17180f"/>
+  <circle cx="194.5" cy="124.5" r="1.8" fill="#ffffff"/>
+  <path d="M184 120 Q 196 115 207 121 M207 121 L207 126" stroke="#3a2a1c" stroke-width="1.6" fill="none"/>
+
+  <!-- Œil droit -->
+  <ellipse cx="224" cy="127" rx="13" ry="8" fill="#fbfcfe" stroke="#c9ccd4" stroke-width="1"/>
+  <path d="M211 122 Q 224 116 237 122 L 234 128 Q 224 124 214 128 Z" fill="#d9c4a8" opacity="0.55"/>
+  <circle cx="223" cy="127" r="6.5" fill="url(#iris)"/>
+  <circle cx="223" cy="127" r="3" fill="#17180f"/>
+  <circle cx="220.5" cy="124.5" r="1.8" fill="#ffffff"/>
+  <path d="M213 121 Q 224 115 236 121 M213 121 L213 126" stroke="#3a2a1c" stroke-width="1.6" fill="none"/>
+
+  <!-- Nez -->
+  <path d="M210 112 L207 142 Q 210 150 213 142 Z" fill="#b9854f" opacity="0.3"/>
+  <ellipse cx="204" cy="147" rx="3.4" ry="2.8" fill="#a06a3f"/>
+  <ellipse cx="216" cy="147" rx="3.4" ry="2.8" fill="#a06a3f"/>
+  <path d="M210 143 Q 208 152 210 155" stroke="#b9854f" stroke-width="1.6" fill="none" opacity="0.6"/>
+
+  <!-- Bouche (sourire) -->
+  <path d="M192 158 Q 201 154 210 157 Q 219 154 228 158 Q 220 166 210 165 Q 200 166 192 158 Z" fill="#a85f4a"/>
+  <path d="M194 161 Q 210 172 226 161 Q 210 171 194 161 Z" fill="#d18c74"/>
+  <path d="M194 160 Q 210 166 226 160" stroke="#8c4c38" stroke-width="1.4" fill="none" opacity="0.8"/>
+
+  <!-- Pommettes -->
+  <circle cx="186" cy="148" r="13" fill="url(#blush)"/>
+  <circle cx="234" cy="148" r="13" fill="url(#blush)"/>
+
+  <!-- CASQUETTE -->
+  <path d="M156 88 Q 150 42 210 42 Q 270 42 264 88 L264 100 L156 100 Z" fill="url(#capG)"/>
+  <path d="M156 88 Q 210 44 264 88" stroke="#000000" stroke-width="3" fill="none" opacity="0.35"/>
+  <circle cx="210" cy="46" r="5" fill="#0a0b0e"/>
+  <path d="M188 54 Q 186 70 190 92" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.05"/>
+  <path d="M232 54 Q 234 70 230 92" stroke="#000000" stroke-width="2.5" fill="none" opacity="0.25"/>
+  <path d="M160 88 Q 210 100 260 88" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.07"/>
+  <!-- Texte sur la casquette -->
+  <text x="210" y="84" font-family="Poppins, Segoe UI, Arial, sans-serif" font-weight="800" font-size="13" letter-spacing="3" text-anchor="middle" fill="#0ea5e9">LAMPHONE</text>
+  <text x="210" y="84" font-family="Poppins, Segoe UI, Arial, sans-serif" font-weight="800" font-size="13" letter-spacing="3" text-anchor="middle" fill="#ffffff" opacity="0.13">LAMPHONE</text>
+  <!-- Visière -->
+  <path d="M154 98 Q 210 124 266 98 L 270 112 Q 210 140 150 112 Z" fill="#08090b"/>
+  <path d="M154 98 Q 210 124 266 98" stroke="#3d4148" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M192 112 Q 210 118 228 112" stroke="#000000" stroke-width="2" fill="none" opacity="0.6"/>
 </svg>
