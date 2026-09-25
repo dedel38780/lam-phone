@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 560" role="img" aria-label="Technicien Lam Phone vêtu de noir, casquette et tee-shirt LAMPHONE">
+  <style>
+    .t { font-family: Poppins, "Segoe UI", Arial, sans-serif; font-weight: 800; text-anchor: middle; }
+  </style>
+
+  <ellipse cx="170" cy="545" rx="106" ry="14" fill="#0b1f3a" opacity="0.16"/>
+
+  <rect x="128" y="420" width="38" height="92" rx="16" fill="#141519"/>
+  <rect x="174" y="420" width="38" height="92" rx="16" fill="#141519"/>
+
+  <rect x="116" y="502" width="58" height="30" rx="12" fill="#f8fafc"/>
+  <rect x="166" y="502" width="58" height="30" rx="12" fill="#f8fafc"/>
+  <rect x="121" y="516" width="50" height="13" rx="6" fill="#0b1f3a" opacity="0.16"/>
+  <rect x="171" y="516" width="50" height="13" rx="6" fill="#0b1f3a" opacity="0.16"/>
+
+  <path d="M106 238 Q74 300 96 388 L112 434 Q170 448 228 434 L244 388 Q266 300 234 238 Q206 214 170 214 Q134 214 106 238 Z" fill="#141519"/>
+
+  <path d="M118 238 Q94 300 108 392 L128 392 Q118 306 138 240 Z" fill="#17181d"/>
+  <circle cx="112" cy="402" r="15" fill="#e7b38c"/>
+
+  <path d="M222 238 Q246 300 232 392 L212 392 Q222 306 202 240 Z" fill="#17181d"/>
+  <circle cx="228" cy="402" r="15" fill="#e7b38c"/>
+
+  <g transform="rotate(8 214 352)">
+    <rect x="194" y="306" width="46" height="96" rx="9" fill="#0f172a" stroke="#2c3648" stroke-width="2"/>
+    <rect x="200" y="322" width="34" height="62" rx="5" fill="#0b1f3a"/>
+    <rect x="206" y="330" width="22" height="40" rx="4" fill="#0ea5e9"/>
+    <text x="217" y="356" class="t" font-size="20" fill="#ffffff">38</text>
+    <rect x="212" y="394" width="10" height="3" rx="1.5" fill="#475569"/>
+  </g>
+
+  <rect x="152" y="192" width="36" height="26" rx="10" fill="#e7b38c"/>
+  <circle cx="170" cy="118" r="60" fill="#e7b38c"/>
+  <circle cx="108" cy="116" r="11" fill="#dfa87c"/>
+  <circle cx="232" cy="116" r="11" fill="#dfa87c"/>
+
+  <rect x="142" y="114" width="17" height="10" rx="5" fill="#23272e"/>
+  <rect x="181" y="114" width="17" height="10" rx="5" fill="#23272e"/>
+  <rect x="139" y="102" width="22" height="4" rx="2" fill="#2b241d"/>
+  <rect x="179" y="102" width="22" height="4" rx="2" fill="#2b241d"/>
+  <circle cx="170" cy="132" r="6" fill="#d9a273"/>
+  <path d="M150 146 Q170 162 190 146" fill="none" stroke="#8a5a36" stroke-width="5" stroke-linecap="round"/>
+
+  <path d="M102 76 Q94 40 170 42 Q248 40 238 76 Q232 92 200 94 L140 94 Q106 92 102 76 Z" fill="#0b0c0e"/>
+  <rect x="104" y="74" width="132" height="20" rx="7" fill="#16181d"/>
+  <text x="170" y="90" class="t" font-size="12.5" letter-spacing="2" fill="#ffffff">LAMPHONE</text>
+  <path d="M100 92 Q168 124 240 92 L248 106 Q170 138 92 106 Z" fill="#0b0c0e"/>
+
+  <text x="170" y="318" class="t" font-size="17" letter-spacing="1.5" fill="#ffffff">LAMPHONE</text>
+</svg>

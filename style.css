@@ -813,8 +813,22 @@ a.info-item:hover {
 .hero-visual {
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: center;
   padding: 20px 0 40px;
+}
+
+.hero-guy {
+  z-index: 2;
+  width: clamp(170px, 26vw, 230px);
+  height: auto;
+  margin-right: -34px;
+  animation: floatGuy 6s ease-in-out infinite;
+}
+
+@keyframes floatGuy {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 .phone-mock {
@@ -1161,6 +1175,11 @@ a.stat:hover span {
   .phone-mock {
     width: 210px;
     height: 440px;
+  }
+
+  .hero-guy {
+    width: 150px;
+    margin-right: -24px;
   }
 
   .float-chip.chip-1 {
