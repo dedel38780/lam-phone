@@ -96,7 +96,7 @@ blockquote footer {
   position: relative;
   overflow: hidden;
   padding: 56px 0 72px;
-  background: linear-gradient(105deg, rgba(11, 31, 58, 0.94) 0%, rgba(11, 31, 58, 0.8) 34%, rgba(11, 31, 58, 0.38) 62%, rgba(11, 31, 58, 0.55) 100%), url("photo-accueil.jpg") center / cover no-repeat;
+  background: linear-gradient(105deg, rgba(11, 31, 58, 0.5) 0%, rgba(11, 31, 58, 0.26) 40%, rgba(11, 31, 58, 0) 68%, rgba(11, 31, 58, 0.15) 100%), url("photo-accueil.jpg") center / cover no-repeat;
 }
 
 .hero .container {
@@ -764,6 +764,14 @@ a.info-item:hover {
   opacity: 0.92;
   margin-bottom: 26px;
   max-width: 520px;
+}
+
+.hero h1,
+.hero-sub,
+.hero-trust,
+.hero-points,
+.hero-devis {
+  text-shadow: 0 1px 12px rgba(11, 31, 58, 0.5);
 }
 
 .hero-actions {
